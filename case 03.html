@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 03</title>
+
+    <style>
+        .section1{
+            width:100%;
+            height:1000px;
+        }
+        .div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+            border-radius:100%
+        }
+
+        .div1{
+            width:250px;
+            height:250px;
+            background-color:transparent;
+            border: 25px solid grey;
+        }
+
+        .div2{
+            width:200px;
+            height:200px;
+            background-color:transparent;
+            position:fixed;
+            border: 25px solid red;
+        }
+
+        .div3{
+            width:210px;
+            aspect-ratio:1/1;
+            background-color:purple;
+            position:absolute;
+            border-radius:100%;
+        }
+
+        .h1{
+            color: white;
+            font-weight: bold;
+            font-size: 32px;
+            border-radius: 5px;
+        }
+
+        .section2{
+            width:99%;
+            height:615px;
+        }
+        .circle{
+            width:210px;
+            aspect-ratio:1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            border-radius:100%;
+            left:570px;
+        }
+
+        .blueCircle{
+            background-color:blue;
+            top:650px;
+        }
+
+        .orangeCircle{
+            background-color:orange;
+            top:170%;
+        }
+        .section2h1{
+            position:relative;
+            left:25px;
+        }
+
+        .section3{
+            width:100%;
+            height:800px;
+        }
+
+    </style>
+</head>
+<body>
+<section class="section1">
+    <div class="div div1">
+        <div class="div div2"></div>
+    </div>
+    <div class="div div3">
+        <h1 class="h1">Hello</h1>
+    </div>
+
+    <div class="circle blueCircle">
+        <h1 class="h1">Welcome To</h1>
+    </div>
+    <div class="circle orangeCircle">
+        <h1 class="h1 section2h1">Institute of Software Engineering</h1>
+    </div>
+</section>
+<section class="section3"></section>
+
+</body>
+</html>
