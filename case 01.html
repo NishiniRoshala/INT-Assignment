@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 01</title>
+    <link rel="stylesheet" href="/assets/lib/normalize.css">
+
+    <style>
+
+        /*section {
+            width: 1000px;
+            height: 500px;
+            border: 5px solid saddlebrown;
+            position: relative;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        div:first-child {
+            right: 0;
+            background-color: crimson;
+        }
+
+        div:nth-child(2) {
+            left: 0;
+            background-color: darkslategray;
+        }
+
+        div:nth-child(3) {
+            !* 1st Way) To keep in center *!
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            !* 2nd Way) To keep in center *!
+            !*right: 450px;
+            top: 200px;*!
+            background-color: yellowgreen;
+        }
+
+        div:nth-last-child(2){
+            bottom: 0;
+            right: 0;
+            background-color: hotpink;
+        }
+
+        div:last-child {
+            bottom: 0;
+            left: 0;
+            background-color: darkorange;
+        }*/
+
+        body>div {
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        div:first-child {
+            background-color: green;
+            right: 0;
+
+        }
+
+        div:nth-child(2) {
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        div:nth-child(3) {
+            background-color: red;
+            left: 0;
+        }
+
+        div:nth-child(4) {
+            background-color: orange;
+            left: 0;
+            bottom: 0;
+        }
+
+
+        body>div>div>div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        div>div>div:nth-child(2) {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        div>div>div:nth-child(1) {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>div:nth-child(5) {
+            position: absolute;
+            width: 275px;
+            height: 275px;
+            background-color: white;
+            aspect-ratio: 1/1;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>div:nth-child(5)>div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>div:nth-child(6){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 0 100% 0;
+
+        }
+
+        body>div:nth-child(7){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 100% 0 0;
+            left:0;
+            bottom: 0;
+
+        }
+
+        body>div:nth-child(8){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 0 0 100% ;
+            top: 0;
+            right: 0;
+
+        }
+
+
+
+        body>div:nth-child(9){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius:  100% 0 0 0;
+            bottom: 0;
+            right: 50%;
+
+        }
+
+
+
+        body>div:nth-child(10){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 0 0 100% ;
+            top: 0;
+            right: 50%;
+
+        }
+
+
+        body>div:nth-child(11){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 100% 0 0;
+            left: 50%;
+            bottom: 0;
+
+        }
+
+        body>div:nth-child(12){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 0 100% 0;
+            top: 0;
+            left: 50%;
+
+        }
+
+        body>div:nth-child(13){
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius:  100% 0 0 0;
+            bottom: 0;
+            right: 0;
+
+        }
+
+
+        /* mn methana 10 idan krala thina de echchara line gank ynne nathuwa apita krnna puluwan...
+         body>div:nth-child(10){
+           right:0;
+           top:-5vw;
+           left:0;
+           margin:auto;
+           border-radius: 0 0 100% 100%;
+         }
+
+          body>div:nth-child(11){
+           right:0;
+           top:0;
+           left:0;
+           margin:auto;
+           border-radius:  100% 100% 0 0;
+         }
+        */
+
+        body{
+            overflow: hidden;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <div></div>
+</div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<!--<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>-->
+
+</body>
+</html>>
