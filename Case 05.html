@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 05</title>
+
+
+
+    <style>
+        section{
+            width: 1000px;
+            height: 500px;
+            border: black 5px solid;
+            display: grid;
+            grid-template-columns:repeat(4,1fr); /*fr=fragment*/
+            grid-template-rows: repeat(3,1fr); /*fr=fragment*/
+
+        }
+
+        section>div{
+            background: tomato;
+            border: black 0.5px solid;
+
+        }
+
+        section>div:nth-child(1){
+            background: red;
+        }
+        section>div:nth-child(2){
+            background: green;
+        }
+        section>div:nth-child(3){
+            background: orangered;
+        }
+        section>div:nth-child(4){
+            background: purple;
+        }
+        section>div:nth-child(5){
+            background: hotpink;
+        }
+        section>div:nth-child(6){
+            background: blue;
+        }
+        section>div:nth-child(7){
+            background: brown;
+        }
+        section>div:nth-child(8){
+            background: deeppink;
+        }
+        section>div:nth-child(9){
+            background: darkmagenta;
+        }
+        section>div:nth-child(10){
+            background: firebrick;
+        }
+        section>div:nth-child(11){
+            background: yellowgreen;
+        }
+        section>div:nth-child(12){
+            background: greenyellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
